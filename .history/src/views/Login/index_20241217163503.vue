@@ -10,8 +10,8 @@ const userStore = useUserStore();
 
 // 1. 准备表单对象
 const form = ref({
-    account: 'heima293',
-    password: 'hm#qd@23!',
+    account: '',
+    password: '',
     agree: true
 })
 
@@ -99,7 +99,7 @@ const doLogin = () => {
                         <el-form ref="formRef" :model="form" :rules="rules" label-position="right" label-width="60px"
                             status-icon>
                             <el-form-item label="账户" prop="account">
-                                <el-input v-model="form.account" show-passwordow/>
+                                <el-input v-model="form.account"  sh/>
                             </el-form-item>
                             <el-form-item prop="password" label="密码">
                                 <el-input v-model="form.password" show-password />
